@@ -19,16 +19,7 @@ vector<vector<int>> vector_1;
 void crear_vectores(int elementos, int dimension){
     int numero_elementos;
 	int numero_dimension;
-//	srand(time(NULL));
-//	int numero_aleatorio;
-//	for(int i = 0; i<elementos; i++){
-//		vector<int> temp;
-//		for(int j = 0; j<dimension; j++){
-//			numero_aleatorio = 1 + rand() % (101 - 1);  ///numeros entre 1-100
-//			temp.push_back(numero_aleatorio);
-//		}
-//		vector_1.push_back(temp);
-//	}
+
     std::random_device rd;  //Will be used to obtain a seed for the random number engine
 		std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
 		std::uniform_int_distribution<> dis(1, 100);
